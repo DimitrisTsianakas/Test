@@ -29,7 +29,7 @@ var row = 1;
 function displayDetails() {
     var fName = document.getElementById("fName").value;
     var lastName = document.getElementById("lastName").value;
-    //var anField = document.getElementById("anField").value;
+  
     
     if (!fName || !lastName ) {
         alert("Συμπληρώστε όλα τα πεδία!");
@@ -40,12 +40,12 @@ var display = document.getElementById("display");
 var newRow = display.insertRow(row);
 var cell1 = newRow.insertCell(0);
 var cell2 = newRow.insertCell(1);
-//var cell3 = newRow.insertCell(2);
+
 
 
 cell1.innerHTML = fName;
 cell2.innerHTML = lastName;
-//cell2.innerHTML = anField;
+
 
 row++;
 }
