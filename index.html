@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+  <h1>Edit User</h1>
+  <div class="container">
+    <div id="options">
+      <input type="text" name="options[]" class="options" placeholder="Firstname" id ="fName" >
+      <input type="text" name="options[]" class="options" placeholder="Lastname" id="lastName" >
+      
+    </div>
+    <div class="controls">
+      <button id="btn" type="submit">Submit</button>    
+      <a href="#" id="add_fields">Add More</a>
+      <a href="#" id="remove_fields">Remove Field</a>
+    </div>
+  </div>
+    
+    <table id="display">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            
+        </tr>
+    </table>
+<script src="script.js"></script>
+</body>
+</html>
