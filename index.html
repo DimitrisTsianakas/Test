@@ -3,7 +3,9 @@
 <head>
   
   <link rel="stylesheet" type="text/css" href="styles.css">
-
+  <script src=
+"https://code.jquery.com/jquery-1.12.4.min.js">
+        </script>
 </head>
 <body>
 
@@ -16,15 +18,19 @@
     </div>
     <div class="controls">
       <button id="btn" type="submit">Submit</button>    
-      <a href="#" id="add_fields">Add More</a>
+        <button onclick="myFunction()" id="add_fields" >Add More</button>
       <a href="#" id="remove_fields">Remove Field</a>
+      <select>
+        <option value="Add Column">Add Column</option>  
+        <option value="Remove Column">Remove Column</option>  
+      </select>
     </div>
   </div>
     
-    <table id="display">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
+    <table id="displays">
+        <tr id="display">
+            <td>Firstname</td>
+            <td>Lastname</td>
             
         </tr>
     </table>
