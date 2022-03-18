@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src=
-"https://code.jquery.com/jquery-1.12.4.min.js">
-        </script>
-</head>
-<body>
 
-  <h1>Edit User</h1>
-  <div class="container">
-    <div id="options">
-      <input type="text" name="options[]" class="options" placeholder="Firstname" id ="fName" >
-      <input type="text" name="options[]" class="options" placeholder="Lastname" id="lastName" >
-      
+<head>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+    </script>
+</head>
+
+<body onload="myFunction()">
+
+    <h1>Edit User</h1>
+    <div class="container">
+        <div id="options">
+            <input type="text" name="options[]" class="options" placeholder="Firstname" id="fName">
+            <input type="text" name="options[]" class="options" placeholder="Lastname" id="lastName">
+
+        </div>
+        <div class="controls">
+            <button id="btn" type="submit">Submit</button>
+            <button onclick="myFunction()" id="add_fields">Add More</button>
+            <button id="remove_fields">Remove Field</button>
+        </div>
+        <select id="selOpts">
+            <option value="Email">Email</option>
+            <option value="Phone Number">Phone Number</option>
+            <option value="ID card">ID card</option>
+            <option value="Postal Code">Postal Code</option>
+        </select>
     </div>
-    <div class="controls">
-      <button id="btn" type="submit">Submit</button>    
-        <button onclick="myFunction()" id="add_fields" >Add More</button>
-      <a href="#" id="remove_fields">Remove Field</a>
-      <select>
-        <option value="Add Column">Add Column</option>  
-        <option value="Remove Column">Remove Column</option>  
-      </select>
-    </div>
-  </div>
-    
+
     <table id="displays">
         <tr id="display">
             <td>Firstname</td>
             <td>Lastname</td>
-            
+
         </tr>
     </table>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
